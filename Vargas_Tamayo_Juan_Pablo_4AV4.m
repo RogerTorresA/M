@@ -13,8 +13,8 @@ who
 whos
 fprintf('Gracias a las funciones podemos hacer matrices mas repidamente  y a partir de matrices ya creadas,el peso es reflejo del espacio que se usa')
 ZM=zeros(size(M))
-OG=ones(size(M))
-EG=eye(size(M))
+OM=ones(size(M))
+EM=eye(size(M))
 fprintf('Si, las dos matrices tienen el rango y dimencion que la G ya que probienen de ella')
 who
 whos
