@@ -1,27 +1,29 @@
 clear
 clc
 %
-disp('Actividad 1 Vargas Tamayo Juan Pablo 4AV4')
+disp('TORRES ALBA LUIS ROGELIO 4AV4 ')
+disp('PRACTICA 1 ')
 disp('Ejercicio1')
-G=[0.6 1.5 2.3 -.05; 8.2 0.5 -0.1 -2.0; 5.7 8.2 9.0 1.5; 0.5 0.5 2.4 0.5; 1.2 -2.3 -4.5 0.5]
-G1=G(:,2:3)
-G2=G(3:4,1:2)
-G3=G(4:5,1:3)
-G4=[G(1,:); G(3,:); G(5,:)]
+M=[0.6 1.5 2.3 -.05; 8.2 0.5 -0.1 -2.0; 5.7 8.2 9.0 1.5; 0.5 0.5 2.4 0.5; 1.2 -2.3 -4.5 0.5]
+M1=M(:,2:3)
+M2=M(3:4,1:2)
+M3=M(4:5,1:3)
+M4=[M(1,:); M(3,:); M(5,:)]
 who
 whos
-fprintf('Gracias al uso de las funciones podemos hacer mas rapidas las matices a partir de matrices ya creadas,el espacio utilizado se ve reflejado en su peso')
-ZG=zeros(size(G))
-OG=ones(size(G))
-EG=eye(size(G))
-fprintf('En efecto, ambas matrices tienen el mismo rango y dimensión de la matriz G ya que probienen de esta')
+fprintf('Gracias a las funciones podemos hacer matrices mas repidamente  y a partir de matrices ya creadas,el peso es reflejo del espacio que se usa')
+ZM=zeros(size(M))
+OG=ones(size(M))
+EG=eye(size(M))
+fprintf('Si, las dos matrices tienen el rango y dimencion que la G ya que probienen de ella')
 who
 whos
 %%
 clear
 clc
 %
-disp('Actividad 1 Vargas Tamayo Juan Pablo 4AV4')
+disp('TORRES ALBA LUIS ROGELIO 4AV4 ')
+disp('PRACTICA 1 ')
 disp('Ejercicio2')
 ma=[1 -7 4;-8 3 6;7 8 3]
 INVa=inv(ma)
@@ -43,17 +45,18 @@ me=[15 -79 0;-81 30 -15;76 -13 1]
 INVe=inv(me)
 DETe=det(me)
 TRAe= me'
-fprintf('No hay diferencia ')
+fprintf('No se encuentran diferencias')
 mult1deTRAb_TRAd=mb'*md'
 mult2deTRAb_TRAd=TRAb*TRAd
-fprintf('No hay diferencia haciendolo de esta forma, si le pongo la palomita fuera del paréntesis si cambia el resultado ')
+fprintf('No existe diferencia en hacerlo de esta forma, si se marca fuera del parÃ©ntesis cambia el resultado ')
 cal_01=ma*md+mb/me 
 cal_02=ma.*md+mb./me
-fprintf('Si hay diferencias en los resultos ya que el punto afecta a las matrices ')
+fprintf('Al poner un punto afectamos a las operaciones de las matrices asi que si cambia el resultado ')
 %%
 clear
 clc
-disp('Actividad 1 Vargas Tamayo Juan Pablo 4AV4')
+disp('TORRES ALBA LUIS ROGELIO 4AV4 ')
+disp('PRACTICA 1 ')
 disp('Ejercicio3')
 ma1=magic(25);
 INVma1=inv(ma1)
@@ -62,8 +65,8 @@ Dma1=det(ma1)
 INV1=eye(25,25)
 DISPE=sparse(INV1)
 whos
-fprintf('De las 3 matrices, la matriz de menor tamaño es la dispersa\n')
+fprintf('La que se dispersa de las 3 es la que tiene el menor tamaÃ±o\n')
 spy(DISPE)
 imagesc(),colorbar
-fprintf('No entiendo del todo la función de la gráfica, se ve una cosa azul')
+fprintf('La grafica salio un poco mal ya que se ve azul cuando deveria verse una diagonal')
 
