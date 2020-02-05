@@ -69,4 +69,8 @@ fprintf('La que se dispersa de las 3 es la que tiene el menor tamaño\n')
 spy(DISPE)
 imagesc(),colorbar
 fprintf('La grafica salio un poco mal ya que se ve azul cuando deveria verse una diagonal')
-
+%%
+clear
+clc
+fprintf('Podemos concluir mediante a estos ejercicios, que  logramos usar comandos para facilitar el uso de matlab en cuanto a matrices ya que podremos hacer operaciones y demas con ellas,\despues de terminar la parectica aprendimos a hacer matrices y poder modificarlas solo con comandos de matlab ya que de esa forma es mas facil y rapido ')
+%%
